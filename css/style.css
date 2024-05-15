@@ -1,0 +1,155 @@
+.heading {
+  font-family: "Fraunces";
+  font-size: 32px;
+  font-weight: 650;
+  line-height: 32px;
+}
+.heading_discount {
+  display: flex;
+  align-items: center;
+}
+.heading_discount::after {
+  content: "$169.99";
+  font-family: "MOntserrat";
+  font-size: 13px;
+  vertical-align: center;
+  text-decoration-line: line-through;
+  color: #6C7289;
+  font-weight: 400;
+  padding-left: 20px;
+  line-height: 23px;
+}
+
+.text {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
+}
+.text_btn {
+  font-weight: 600;
+}
+.text_overline {
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #6C7289;
+  margin-bottom: 7px;
+}
+.text_aurometal {
+  color: #6C7289;
+}
+.text_aquamarine {
+  color: #3D8168;
+}
+
+@media (min-width: 620px) {
+  .text_overline {
+    margin-bottom: 16px;
+  }
+}
+body {
+  background: #F2EAE2;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 24.5px 0;
+}
+
+@media (min-width: 620px) {
+  .container {
+    padding: 0 33px 0;
+  }
+}
+.main {
+  background: #FFFFFF;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  margin: 0 auto;
+  margin-top: 29px;
+}
+.main__img {
+  height: 240px;
+  width: 100%;
+  background-image: url("../../images/image-product-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  margin-bottom: 21px;
+}
+.main__img::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.1;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.main__btn {
+  margin-bottom: 24px;
+}
+.main__heading {
+  margin-bottom: 13.5px;
+}
+.main__paragraph {
+  margin-bottom: 27.5px;
+}
+.main__price {
+  margin-bottom: 19px;
+}
+
+@media (min-width: 620px) {
+  .main {
+    flex-direction: row;
+    width: 600px;
+    height: 450px;
+    margin-top: 175px;
+  }
+  .main__img {
+    width: 50%;
+    height: auto;
+    background-image: url("../../images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+  }
+  .main__article {
+    width: 50%;
+    padding-top: 30px;
+  }
+  .main__heading {
+    margin-bottom: 24px;
+  }
+  .main__price {
+    margin-bottom: 24px;
+  }
+  .main__discount {
+    margin-bottom: 29px;
+  }
+}
+.btn {
+  display: inline-flex;
+  width: 100%;
+  height: 48px;
+  background: #3D8168;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.btn__icon {
+  margin-right: 10px;
+}
+.btn:hover {
+  background: #1A4032;
+}/*# sourceMappingURL=style.css.map */

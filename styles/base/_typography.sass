@@ -1,0 +1,42 @@
+.heading
+    font-family: 'Fraunces'
+    font-size: 32px
+    font-weight: 650
+    line-height: 32px
+    &_discount
+        display: flex
+        align-items: center
+        &::after
+            content: "$169.99"
+            font-family: 'MOntserrat'
+            font-size: 13px
+            vertical-align: center
+            text-decoration-line: line-through
+            color: $aurometal-saurus
+            font-weight: 400
+            padding-left: 20px
+            line-height: 23px
+
+.text
+    font-family: 'Montserrat'
+    font-size: 14px
+    line-height: 23px
+    font-weight: 400
+    &_btn
+        font-weight: 600
+    &_overline
+        font-size: 12px
+        letter-spacing: 5px
+        text-transform: uppercase
+        color: $aurometal-saurus
+        margin-bottom: 7px
+    &_aurometal
+        color: $aurometal-saurus
+    &_aquamarine
+        color: $deep-aquamarine
+
+    // Media Queries
+@media (min-width: 620px)
+    .text
+        &_overline
+            margin-bottom: 16px
